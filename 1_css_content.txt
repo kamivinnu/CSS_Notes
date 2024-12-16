@@ -1,0 +1,14 @@
+CSS (Cascading Style Sheet)
+
+1. Introduction and syntax, colors
+2. Units of measurements and forms
+3. Text formatting styles and icons
+4. Visual formatting and box model
+5. Selectors and division method and background image
+6. float, container and clear 
+7. Flex box and grid 
+8. Pseudo elements and classes and shadow 
+9. Positions, border radius, outline 
+10. Animations and opacity, overflow 
+11. Gradients and transition 
+12. Media queries 

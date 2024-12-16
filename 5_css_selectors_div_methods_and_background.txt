@@ -1,0 +1,140 @@
+CSS Selectors
+
+1. Universal Selector
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+2. Element Type Selectors
+
+p {
+    color: blue;
+}
+
+3. Id Selectors
+
+#error {
+    color: red;
+}
+
+4. Class Selectors
+
+.blue {
+    color: blue;
+}
+
+p.blue {
+    color: blue;
+}
+
+5. Descendant Selectors
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS Descendant Selectors</title>
+<style>
+	h1 em {
+		color: green;
+	}
+    ul.menu {
+        padding: 0;
+        list-style: none;
+	}
+    ul.menu li{
+        display: inline;
+	}
+	ul.menu li a {
+		margin: 10px;
+		text-decoration: none;
+	}
+</style>
+</head>
+<body>
+	<h1>This is a <em>heading</em></h1>
+	<ul class="menu">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>		
+		<li><a href="#">Services</a></li>
+		<li><a href="#">Contact</a></li>
+	</ul>
+</body>
+</html>
+
+6. Child Selectors
+
+ul > li {
+    list-style: square;
+}
+ul > li ol {
+    list-style: none;
+}
+
+7. Adjacent Sibling Selectors
+
+h1 + p {
+    color: blue;
+    font-size: 18px;
+}
+ul.task + p {
+    color: #f0f;
+    text-indent: 30px;
+}
+
+----------------------------------------------------------------------
+======================================================================
+
+3. Background:
+
+CSS Background
+
+- background-color
+- background-image
+- background-repeat
+- background-attachment
+- background-position
+
+            -----------------------------------------
+Background Color
+
+body {
+    background-color: #f0e68c;
+}
+
+            -----------------------------------------
+
+Background Image
+
+body {
+    background-image: url("images/tile.png");
+}
+
+            -----------------------------------------
+
+Background Repeat
+
+body {
+    background-image: url("images/gradient.png");
+    background-repeat: repeat-x;
+}
+
+            -----------------------------------------
+
+Background Position
+
+body {
+    background-image: url("images/bell.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+    ------- ----------  --------
+
+The Background Shorthand Property
+
+body {
+    background: #f0e68c url("images/smiley.png") no-repeat fixed 250px 25px;
+}

@@ -1,0 +1,35 @@
+CSS Pseudo-classes
+
+A CSS pseudo-class selector matches components based on an additional condition and not necessarily defined by the document tree.
+
+selector:pseudo-class { property: value; }
+
+------------------------------------------------
+Anchor Pseudo-classes
+
+a:link {
+    color: blue;
+}
+a:visited {
+    text-decoration: none;
+}
+
+------------------------------------------------
+
+a:hover {
+    color: red;
+}
+a:active {
+    color: gray;
+}
+a:focus {
+    color: yellow;
+}
+
+------------------------------------------------
+------------------------------------------------
+
+:hover applies when a user places cursor over the element, but does not select it.
+:active applies when the element is activated or clicked.
+:focus applies when the element has keyboard focus.
+

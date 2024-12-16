@@ -1,0 +1,103 @@
+CSS:
+
+- CSS is the key presentational technology that is used in website design.
+
+- CSS is a standard style sheet language used for describing the presentation (i.e. the layout and formatting) of the web pages.
+
+- development of the large websites became a long and expensive process, since the style information were repeatedly added to every single page of the website.
+
+- CSS was introduced in 1996 by the World Wide Web Consortium (W3C), which also maintains its standard. 
+
+- CSS was designed to enable the separation of presentation and content. Now web designers can move the formatting information of the web pages to a separate style sheet which results in considerably simpler HTML markup, and better maintainability.
+
+----------------------------------------------
+----------------            ------------------
+
+What You Can Do with CSS
+
+- You can easily apply same style rules on multiple elements.
+- You can control the presentation of multiple pages of a website with a single style sheet.
+- You can present the same page differently on different devices.
+- You can style dynamic states of elements such as hover, focus, etc. that isn't possible otherwise.
+- You can change the position of an element on a web page without changing the markup.
+- You can alter the display of existing HTML elements.
+- You can transform elements like scale, rotate, skew, etc. in 2D or 3D space.
+- You can create animations and transitions effects without using any JavaScript.
+- You can create print friendly version of your web pages.
+
+---------------------------------------------------------------
+Advantages of Using CSS
+
+- CSS saves lot of time
+- Easy Maintainence
+- Pages Load Faster
+- Superior styles to HTML
+- Multiple Device Compatibility
+
+
+----------------------------------------------
+Including CSS in HTML Documents
+
+- Inline styles
+- Embedded styles
+- External style sheets
+
+--- Inline style examples:
+
+<h1 style="color:red; font-size:30px;">This is a heading</h1>
+<p style="color:green; font-size:22px;">This is a paragraph.</p>
+<div style="color:blue; font-size:14px;">This is some text content.</div>
+
+--- Embedded styles examples:
+
+<head>
+    <title>My HTML Document</title>
+    <style>
+        body { background-color: YellowGreen; }
+        p { color: #fff; }
+    </style>
+</head>
+
+--- External Style sheets examples:
+
+body {
+    background: lightyellow;
+    font: 18px Arial, sans-serif;
+}
+h1 {
+    color: orange;
+}
+
+----------------------------------------------------
+----------------------------------------------------
+syntax:
+
+Selector {property : value}
+
+
+----------------------------------------------------
+----------------------------------------------------
+CSS color
+
+Defining Color Values:
+
+Colors in CSS most often specified in the following formats:
+
+- a color keyword - like "red", "green", "blue", "transparent", etc.
+- a HEX value - like "#ff0000", "#00ff00", etc.
+- an RGB value - like "rgb(255, 0, 0)"
+
+- RGBA Color Values - color: rgba(0,0,255,0.5);
+    a - alpha - 
+                - 0.0 fully transparent
+                - 1.0 fully opaque
+
+- HSL Color Values - 
+        color: hsl(360,70%,60%);
+
+        h - hue - (0 to 360 degree)
+        s - saturation - 100% full color
+        l - lightness - 100% white - 50% normal
+
+- HSLA Color Values:
+    color: hsla(360,80%,50%,0.5);

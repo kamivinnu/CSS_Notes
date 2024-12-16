@@ -1,0 +1,130 @@
+CSS3 Media Queries
+
+Media queries allow you to customize the presentation of your web pages for a specific range of devices like mobile phones, tablets, desktops, etc. without any change in markups.
+
+<style>
+    /* Smartphones (portrait and landscape) ---------- */
+    @media screen and (min-width: 320px) and (max-width: 480px){
+        body{
+			background: #7ce7e1;
+		}
+    }
+    /* Smartphones (portrait) ---------- */
+    @media screen and (max-width: 320px){
+        body{
+			background: #ffd280;
+		}
+    }
+    /* Smartphones (landscape) ---------- */
+    @media screen and (min-width: 321px){
+        body{
+			background: #9ddfbb;
+		}
+    }
+    /* tablets, iPads (portrait and landscape) ---------- */
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        body{
+			background: #ffb497;
+		}
+    }
+    /* tablets, iPads (portrait) ---------- */
+    @media screen and (min-width: 768px){
+        body{
+			background: #f0e68c;
+		}
+    }
+    /* tablets, iPads (landscape) ---------- */
+    @media screen and (min-width: 1024px){
+        body{
+			background: #d6b3f4;
+		}
+    }
+    /* Desktops and laptops ---------- */
+    @media screen and (min-width: 1224px){
+        body{
+			background: #d8ff9d;
+		}
+    }
+    /* Large screens ---------- */
+    @media screen and (min-width: 1824px){
+        body{
+			background: #ffc0cb;
+		}
+    }
+</style>
+</head>
+<body>
+    <h1>CSS Media Queries</h1>
+    <p>The background of the output area is different in different media or devices.</p>
+    <p><strong>Alternative:</strong> You can also see the effect of this media query by opening the output in a new window and resize it to different sizes.</p>
+</body>
+</html>
+
+======================================================================================
+
+Changing Column Width Based on Screen Size
+
+<style> 
+.container {
+	margin: 0 auto;
+    background: #ceceff;
+    box-sizing: border-box;
+}
+/* Mobile phones (portrait and landscape) ---------- */
+@media screen and (max-width: 767px){
+    .container {
+        width: 100%;
+        padding: 5px 10px;
+    }
+}
+/* Tablets and iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .container {
+        width: 750px;
+        padding: 5px 10px;
+    }
+}
+
+<div class="container">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+
+		<p>Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
+	</div>
+
+======================================================================================
+
+Changing Layouts Based on Screen Size
+
+<style> 
+.column {
+    width: 48%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: #97ddff;
+    float: left;
+}
+.container .column:first-child{
+    margin-right: 4%;
+}
+@media screen and (max-width: 767px){
+    .column {
+        width: 100%;
+        padding: 5px 20px;
+        float: none;
+    }
+    .container .column:first-child{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<div class="column">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla. Vivamus nisl leo, blandit at bibendum eu, tristique eget risus. Integer aliquet quam ut elit suscipit, id interdum neque porttitor. Integer faucibus ligula.</p>
+        </div>
+		<div class="column">
+            <p>Quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
+        </div>
+	</div>

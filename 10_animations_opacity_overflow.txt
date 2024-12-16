@@ -1,0 +1,147 @@
+CSS3 Animations
+
+The CSS3 animations feature allows you to create keyframe animations.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Translate Animation</title>
+<style>
+    .box {
+		margin: 50px;
+        width:153px;
+        height:103px;
+        background: url("/examples/images/tortoise-transparent.png") no-repeat;
+        position: relative;
+        /* Standard syntax */
+        animation-name: moveit;
+        animation-duration: 2s;
+    }
+     
+    /* Standard syntax */
+    @keyframes moveit {
+        from {left: 0;}
+        to {left: 50%;}
+    }
+</style>
+</head>
+<body>
+    <p><strong>Note:</strong> Click the "Show Output" button to repeat the animation.</p>
+    <div class="box"></div>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------
+Defining Keyframes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Shake Animation</title>
+<style>
+    .box {
+        margin: 50px;
+        width:120px;
+        height:110px;
+        background: url("/examples/images/star-fish-transparent.png") no-repeat;
+        position: relative;
+        left: 0;
+        /* Standard syntax */
+        animation-name: shakeit;
+        animation-duration: 2s;
+    }
+
+    /* Standard syntax */
+    @keyframes shakeit {
+        12.5% {left: -50px;}
+        25% {left: 50px;}
+        37.5% {left: -25px;}
+        50% {left: 25px;}
+        62.5% {left: -10px;}
+        75% {left: 10px;}
+    }
+</style>
+</head>
+<body>
+    <p><strong>Note:</strong> Click the "Show Output" button to repeat the animation.</p>
+    <div class="box"></div>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------
+Animation Shorthand Property
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Infinite Translate Animation</title>
+<style>
+    .box {
+		margin: 50px;
+        width:103px;
+        height:130px;
+        background: url("/examples/images/octopus.png") no-repeat;
+        position: relative;
+        /* Standard syntax */
+        animation: repeatit 2s linear 0s infinite alternate;
+    }
+     
+    /* Standard syntax */
+    @keyframes repeatit {
+        from {left: 0;}
+        to {left: 50%;}
+    }
+</style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
+
+----------------------------------------------------------------------------------------
+CSS3 Animation Properties.
+
+Property	Description
+
+animation:	A shorthand property for setting all the animation properties in single declaration.
+
+animation-name:	Specifies the name of @keyframes defined animations that should be applied to the selected element.
+
+animation-duration:	Specifies how many seconds or milliseconds that an animation takes to complete one cycle of the animation.
+
+animation-timing-function: Specifies how the animation will progress over the duration of each cycle i.e. the easing functions.
+
+animation-delay: Specifies when the animation will start.
+
+animation-iteration-count:	Specifies the number of times an animation cycle should be played before stopping.
+
+animation-direction: Specifies whether or not the animation should play in reverse on alternate cycles.
+
+animation-fill-mode: Specifies how a CSS animation should apply styles to its target before and after it is executing.
+
+animation-play-state: Specifies whether the animation is running or paused.
+
+@keyframes:	Specifies the values for the animating properties at various points during the animation.
+
+
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
+
+CSS Opacity
+
+The opacity CSS property specifies the transparency of an element.
+
+Cross Browser Opacity
+
+p {
+    opacity: 0.7;
+}
+
+CSS Image Opacity
+

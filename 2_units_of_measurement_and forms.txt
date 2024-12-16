@@ -1,0 +1,57 @@
+2.1 Units of measurements
+
+Understanding CSS Units
+
+The units in which length is measured can be either absolute such as pixels, points and so on, or relative such as percentages (%) and em units.
+
+-----------------
+
+Relative Length Units: 
+
+Relative length units specify a length relative to another length property. Relative units are:
+
+Unit	Description
+em	the current font-size
+ex	the x-height of the current font
+
+----------------------------
+Using the Em Unit
+
+A measurement of 1em is equal to the computed value of the font-size property of the element on which it is used. It may be used for vertical or horizontal measurement.
+
+For example, if font-size of the element set to 16px and line-height set to 2.5em then the calculated value of line-height in pixel is 2.5 x 16px = 40px.
+
+p {
+    font-size: 16px;
+    line-height: 2.5em;
+}
+
+Using the Ex Unit
+
+
+---------------------------
+
+Absolute Length Units
+
+Unit	Description
+in	inches – 1in is equal to 2.54cm.
+cm	centimeters.
+mm	millimeters.
+pt	points – In CSS, one point is defined as 1/72 inch (0.353mm).
+pc	picas – 1pc is equal to 12pt.
+px	pixel units – 1px is equal to 0.75pt.
+
+
+h1 { margin: 0.5in; }       /* inches  */
+h2 { line-height: 3cm; }    /* centimeters */
+h3 { word-spacing: 4mm; }   /* millimeters */
+h4 { font-size: 12pt; }     /* points */
+h5 { font-size: 1pc; }      /* picas */
+h6 { font-size: 12px; }     /* picas */
+
+Note: Style sheets that use the relative units such as em or percentage (%) can more easily scale from one output environment to another.
+
+
+
+2.2 Forms
+

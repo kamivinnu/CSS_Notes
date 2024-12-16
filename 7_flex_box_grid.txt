@@ -1,0 +1,260 @@
+CSS3 Flexible Box Layouts
+
+CSS3 flexible Box, or flexbox is a new layout model for creating the more flexible user interface design.
+
+--------------------------------------------------
+
+Example 1:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of CSS3 Three Equal Flex Column Layout</title>
+<style>
+.flex-container {
+	width: 80%;
+	min-height: 300px;
+	margin: 0 auto;
+	font-size: 32px;	
+	display: flex; /* Standard syntax */
+	border: 1px solid #808080;
+}
+.flex-container div {
+	padding: 10px;
+	background: #dbdfe5;
+	flex: 1; /* Standard syntax */
+}
+.flex-container div.bg-alt{
+	background: #b4bac0;
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">Item 1</div>
+        <div class="item2 bg-alt">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+    <p><strong>Note:</strong> If you change the width of the flex-container the width of the flex items will automatically adjusted without doing anything.</p>
+</body>
+</html>
+
+--------------------------------------------------------------------------------------
+Example 2:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Controlling Flow inside Flex Container along Main Axis</title>
+<style>
+.flex-container {
+    width: 80%;
+    min-height: 300px;
+    margin: 0 auto;
+	font-size: 32px;
+    /* Standard syntax */
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #666;
+}
+.flex-container div {
+	padding: 10px;
+	flex: 1; /* Standard syntax */
+}
+.item1 {
+	background: #e84d51;
+}
+.item2 {
+	background: #7ed636;
+}
+.item3 {
+	background: #2f97ff;
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">Item 1</div>
+        <div class="item2">Item 2</div>
+        <div class="item3">Item 3</div>
+    </div>
+    <p><strong>Note:</strong> Change the value of flex-direction property from "row-reverse" to "row" to understand how this property works.</p>
+</body>
+</html>
+
+---------------------------------------------------------------------------------
+
+Example 3:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Alignment of Flex Container's Lines</title>
+<style> 
+.flex-container {
+    width: 500px;
+    min-height: 300px;
+    margin: 0 auto;
+	font-size: 32px;
+    border: 1px solid #666;
+    /* Standard syntax */
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-around;
+}
+.flex-container div {
+	width: 150px;
+	height: 100px;
+}
+.red {
+    background: #e84d51;
+}
+.green {;
+    background: #7ed636;
+}
+.blue {
+    background: #2f97ff;
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="red">1</div>
+        <div class="green">2</div>
+        <div class="blue">3</div>
+        <div class="green">4</div>
+        <div class="blue">5</div>
+        <div class="red">6</div>
+    </div>
+    <p><strong>Note:</strong> Try the other values for the align-content property like, "flex-start", "flex-end", "center", "space-between" and "stretch" to understand how it aligns the items inside flex container.</p>
+</body>
+</html>
+
+---------------------------------------------------------------------------------
+
+---------------CSS3 Gradients--------------
+
+The CSS3 gradient feature allows you to create a gradient from one color to another without using any images.
+
+-------------------------------------------------------
+Creating CSS3 Linear Gradients
+
+syntax - linear-gradient(direction, color-stop1, color-stop2, ...)
+
+-------------------------------------------------------------
+Linear Gradient - Top to Bottom
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of Linear Gradients from Top to Bottom</title>
+<style>      
+	.gradient {
+		width: 400px;
+		height: 300px;
+		/* Fallback for browsers that don't support gradients */
+		background: red;
+		/* Standard syntax */
+		background: linear-gradient(red, yellow);
+	}
+</style>
+</head>
+<body>
+    <div class="gradient"></div>
+</body>
+</html> 
+
+---------------------------------------------------------------
+
+Linear Gradient - Left to Right
+
+.gradient {
+    background: linear-gradient(to right, red, yellow);
+}
+
+----------------------------------------------------------------
+
+Linear Gradient - Diagonal
+
+.gradient {
+    background: linear-gradient(to top right, red, yellow);
+}
+
+---------------------------------------------------------------
+---------------------------------------------------------------
+
+Creating Linear Gradients Using Multiple Color Stops
+
+
+.gradient {
+    background: linear-gradient(red, yellow, lime);
+}
+
+Setting the Location Color Stops
+
+.gradient {
+    background: linear-gradient(red, yellow 30%, lime 60%);
+}
+
+---------------------------------------------------------------
+
+Repeating the Linear Gradients
+
+.gradient {
+    background: repeating-linear-gradient(black, white 10%, lime 20%);
+}
+
+--------------------------------------------------------------
+
+Creating CSS3 Radial Gradients
+
+radial-gradient(shape size at position, color-stop1, color-stop2, ...);
+
+.gradient {
+    background: radial-gradient(red, yellow, lime);
+}
+
+--------------------------------------------------------------
+
+Setting the Shape of Radial Gradients
+
+.gradient {
+    /* Fallback for browsers that don't support gradients */
+    background: red;
+    /* Standard syntax */
+    background: radial-gradient(circle, red, yellow, lime);
+}
+
+Setting the Size of Radial Gradients
+
+.gradient {
+    /* Fallback for browsers that don't support gradients */
+    background: red;
+    /* Standard syntax */
+    background: radial-gradient(circle farthest-side at left bottom, red, yellow, lime);
+}
+
+Repeating the Radial Gradients
+
+.gradient {
+    /* Fallback for browsers that don't support gradients */
+    background: white;
+    /* Standard syntax */
+    background: repeating-radial-gradient(black, white 10%, lime 20%);
+}
+
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+CSS3 Transparency and Gradients
+
+.gradient {
+    /* Fallback for browsers that don't support gradients */
+    background: url("images/sky.jpg");
+    /* Standard syntax */
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), url("images/sky.jpg");
+}
+

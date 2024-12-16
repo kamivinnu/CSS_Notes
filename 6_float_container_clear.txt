@@ -1,0 +1,13 @@
+CSS Float
+
+The CSS float property specifies whether a box should float or not.
+
+Value	Description
+left	The element floats on the left side of its containing block.
+right	The element floats on the right side of its containing block.
+none	Removes the float property from an element.
+
+img {
+    float: left;
+}
+

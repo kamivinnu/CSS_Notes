@@ -1,0 +1,56 @@
+CSS3 Transitions
+
+<style>
+    button {
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font: bold 18px sans-serif;
+        background: #fd7c2a;
+        transition: background 2s; /* For modern browsers */
+    }
+    button:hover {
+        background: #3cc16e;
+    }
+</style>
+
+Note: Not all CSS properties are animatable. In general, any CSS property that accepts values that are numbers, lengths, percentages, or colors is animatable.
+
+======================================================================================
+
+Performing Multiple Transitions
+<style>
+    button {
+		color: #fff;
+        padding: 10px 20px;
+        font: bold 18px sans-serif;
+        background: #fd7c2a;
+        border: 3px solid #dc5801;
+        /* For Safari 3.0+ */
+        -webkit-transition-property: background, border;
+        -webkit-transition-duration: 1s, 2s;
+        /* Standard syntax */
+        transition-property: background, border;
+        transition-duration: 1s, 2s;
+    }
+    button:hover {
+        background: #3cc16e;
+        border-color: #288049;
+    }
+</style>
+
+======================================================================================
+Transition Shorthand Property
+
+Property	Description
+- transition	A shorthand property for setting all the four individual transition properties in a single declaration.
+
+- transition-delay	Specifies when the transition will start.
+
+- transition-duration	Specifies the number of seconds or milliseconds a transition animation should take to complete.
+
+- transition-property	Specifies the names of the CSS properties to which a transition effect should be applied.
+
+- transition-timing-function	Specifies how the intermediate values of the CSS properties being affected by a transition will be calculated.
+======================================================================================
+======================================================================================

@@ -1,0 +1,158 @@
+CSS Position
+The position property defines how an element will be positioned on a page.
+
+CSS Positioning Methods:
+    1. static
+    2. relative - top, left, right, bottom
+    3. absolute
+    4. fixed
+
+==========================================================
+Static Positioning
+A static positioned element is always positioned according to the normal flow of the page. HTML elements are positioned static by default. 
+
+Note: Static positioned elements are not affected by the top, bottom, left, right, and z-index properties.
+
+Example:
+
+    <style>
+    .box{
+        color: #fff;
+        background: #7dc765;
+        padding: 20px;
+    }
+    .container{
+        padding: 50px;
+        margin: 50px;
+        position: relative;
+        border: 5px solid black;
+        font-family: Arial, sans-serif;
+    }
+    .container p{
+        line-height: 50px;
+    }
+    </style>
+
+==========================================================
+
+Relative Positioning
+
+<style>
+    .box{
+        position: relative;
+        left: 100px;
+        color: #fff;
+        background: #00c4cc;
+        padding: 20px;
+    }
+    .container{
+        padding: 50px;
+        margin: 50px;
+        border: 5px solid black;
+        font-family: Arial, sans-serif;
+    }
+    .container p{
+        line-height: 50px;
+    }
+</style>
+
+==========================================================
+Absolute Positioning
+
+An absolutely positioned element is positioned relative to the first parent element that has a position other than static. If no such element is found, it will be positioned on a page relative to the 'top-left' corner of the browser window. The box's offsets further can be specified using one or more of the properties top, right, bottom, and left.
+
+<style>
+    .box{
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        color: #fff;
+        width: 60%;
+        background: #4cafdf;
+        padding: 20px;
+    }
+    .container{
+        padding: 50px;
+        margin: 50px;
+        position: relative;
+        border: 5px solid black;
+        font-family: Arial, sans-serif;
+    }
+    .container p{
+        line-height: 50px;
+    }
+</style>
+
+==========================================================
+
+Fixed Positioning
+
+Fixed positioning is a subcategory of absolute positioning.
+
+The only difference is, a fixed positioned element is fixed with respect to the browser's viewport and does not move when scrolled.
+
+<style>
+    .box{
+        position: fixed;
+        top: 200px;
+        left: 100px;
+        color: #fff;
+        width: 60%;
+        background: #f44712;
+        padding: 20px;
+    }
+    .container{
+        padding: 50px;
+        margin: 50px;
+        position: relative;
+        border: 5px solid black;
+        font-family: Arial, sans-serif;
+    }
+    .container p{
+        line-height: 50px;
+    }
+</style>
+==========================================================
+
+
+CSS3 Border - radius, image
+
+<style>
+	.box {
+		width: 300px;
+		height: 150px;
+		background: #ffb6c1;
+		border: 2px solid #f08080;
+		border-radius: 20px;
+	}
+</style>
+
+<style>
+	.box {
+		width: 300px;
+		height: 150px;
+		border: 15px solid transparent;
+		border-image: url("/examples/images/border.png") 30 30 round;
+	}
+</style>
+
+==========================================================
+
+CSS Outline
+
+Outlines Vs Borders
+
+An outline looks very similar to the border, but it differs from border in the following ways:
+
+    1. Outlines do not take up space, because they always placed on top of the box of the element which may cause them to overlap other elements on the page.
+    2. Unlike borders, outlines won't allow us to set each edge to a different width, or set different colors and styles for each edge. An outline is the same on all sides.
+    3. Outlines do not have any impact on surrounding elements apart from overlapping.
+    4. Unlike borders, outlines do not change the size or position of the element.
+    5. Outlines may be non-rectangular, but you cannot create circular outlines.
+
+<style>      
+    	p {
+			outline-style: double;
+			outline-width: 5px;
+		}
+    </style>
